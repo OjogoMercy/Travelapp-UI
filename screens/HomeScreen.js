@@ -5,6 +5,7 @@ import { StatusBar } from 'react-native'
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
+        <StatusBar />
       <Text>HomeScreen</Text>
     </SafeAreaView>
   )
