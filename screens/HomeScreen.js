@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, StatusBar,Image,TextInput, TouchableOpacity,FlatList } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, StatusBar,Image,TextInput, TouchableOpacity,FlatList,ScrollView } from 'react-native';
 import React from 'react';
 import images from '@/assets/images/Images';
 import { Ionicons,Feather } from '@expo/vector-icons';
@@ -58,6 +58,7 @@ const HomeScreen = () => {
                   <Text style={styles.tabtext}>Adventure</Text>
               </TouchableOpacity>
           </View>
+          <ScrollView>
           <FlatList
               horizontal
               data={Database}
@@ -75,6 +76,7 @@ const HomeScreen = () => {
               keyExtractor={(item) => item.id}
               renderItem={renderItems}
               showsVerticalScrollIndicator={false} />
+          </ScrollView>
       </SafeAreaView>
       <View style={styles.container1}>
               <TouchableOpacity>
@@ -148,7 +150,6 @@ const styles = StyleSheet.create({
     padding:0,
     marginTop:20,
     height:260,
-    marginBottom:450
   },
   title:{
     fontSize:18,
