@@ -16,8 +16,8 @@ const HomeScreen = () => {
       const renderItems = ({ item }) => (
         <View style={{flexDirection:'row',justifyContent:'space-between',padding:5,alignItems:'center'}}>
           <View style={styles.contain}>
-          <Image source={item.image} style={{height:60,width:60,borderRadius:20,marginTop:5}}/>
-          <View style={{padding:15,width:'87%'}}>
+          <Image source={item.image} style={{height:70,width:70,borderRadius:20,marginTop:5}}/>
+          <View style={{padding:10,width:'80%'}}>
           <Text style={{fontSize:14,fontWeight:'bold',color:'gray'}}>{item.title}</Text>
           <Text style={styles.description}>{item.description} </Text>
           </View>
