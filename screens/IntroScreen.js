@@ -7,7 +7,7 @@ const IntroScreen = ({ navigation }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigation.replace('HomeScreen'); 
-    }, 5000);
+    }, 4000);
 
     return () => clearTimeout(timer);   
   }, []);
