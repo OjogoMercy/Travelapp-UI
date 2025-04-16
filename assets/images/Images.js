@@ -9,6 +9,7 @@ const images = {
     nairobi: require('../images/nairobi.jpg'),
     nigeria: require('../images/nigeria.jpg'),
     bags: require('../images/bags.png'),
+    filter: require('../images/filter.png'),
   };
   
   export default images;
