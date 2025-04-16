@@ -27,7 +27,17 @@ const HomeScreen = () => {
          <Ionicons name="options" size={20} color="#bbb" />
          </TouchableOpacity>
       </View>
-      <View style={styles.tab}></View>
+      <View style={styles.tab}>
+        <View style={[styles.con, {backgroundColor:'#78bdfc'}]}>
+            <Text style={styles.tabtext}>Sights</Text>
+        </View>
+         <View style={styles.con}>
+            <Text style={styles.tabtext}>Tour</Text>
+        </View>
+         <View style={styles.con}>
+            <Text style={styles.tabtext}>Adventure</Text>
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
@@ -49,5 +59,22 @@ const styles = StyleSheet.create({
     borderRadius:30,
     alignItems:'center',
     paddingHorizontal:10,
+  },
+  tab:{
+    flexDirection:'row',
+    marginTop:20,
+    justifyContent:'space-between'
+  },
+  con:{
+    backgroundColor:'#fff',
+    width:100,
+    height:25,
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:10,
+    paddingHorizontal:10
+  },
+  tabtext:{
+    fontWeight:'bold'
   },
 });
