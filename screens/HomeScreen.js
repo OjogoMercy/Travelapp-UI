@@ -17,7 +17,7 @@ const HomeScreen = () => {
         <View style={{flexDirection:'row',justifyContent:'space-between',padding:5,alignItems:'center'}}>
           <View style={styles.contain}>
           <Image source={item.image} style={{height:60,width:60,borderRadius:20}}/>
-          <View style={{padding:5,width:'87%'}}>
+          <View style={{padding:15,width:'87%'}}>
           <Text style={{fontSize:14,fontWeight:'bold',color:'gray'}}>{item.title}</Text>
           <Text style={styles.description}>{item.description} </Text>
           </View>
@@ -66,7 +66,7 @@ const HomeScreen = () => {
         renderItem={renderItem}
         contentContainerStyle={styles.listContainer}
       />
-      <View style={{flexDirection:'row',paddingHorizontal:10,justifyContent:'space-between'}}>
+      <View style={{flexDirection:'row',paddingHorizontal:10,justifyContent:'space-between',marginBottom:10}}>
         <Text style={{fontSize:18,fontWeight:'bold',color:'#425884'}}>Popular</Text>
         <TouchableOpacity>
             <Text style={{fontSize:13,fontWeight:'bold',marginTop:10}}>See All</Text>
@@ -128,12 +128,13 @@ const styles = StyleSheet.create({
     padding:20,
     borderRadius:30,
     marginRight:10,
-    width:260
+    width:260,
+    marginBottom:10
   },
   listContainer:{
     padding:0,
     marginTop:20,
-    height:250,
+    height:260,
     marginBottom:500
   },
   title:{
@@ -145,9 +146,6 @@ const styles = StyleSheet.create({
   description:{
     fontSize:10,
     color:'#777'
-  },
-  listContainer1:{
-    
   },
   contain:{
     flexDirection:'row',
