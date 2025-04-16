@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
+import StackNavigator from './../navigation/Stacknavigator';
 
 export default function RootLayout() {
-  return <Stack  screenOptions={{headerShown:false}}/>;
+  return <StackNavigator/>;
 }

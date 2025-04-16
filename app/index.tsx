@@ -55,7 +55,6 @@ export default function Index() {
         contentContainerStyle={styles.listContainer}
       />
            <View style={{ alignItems: "center",marginHorizontal:20}}>
-        <Icon name="home" size={26} />
       </View>
       </View>
   );
